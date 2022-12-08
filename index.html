@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sprite-from-Sprite: Cartoon Animation Decomposition with Self-supervised Sprite Estimation</title>
+	<link rel="stylesheet" type="text/css" href="./index_files/pixl-bk.css">
+	<link rel="stylesheet" type="text/css" href="./index_files/pixl-fonts.css">
+</head>
+
+<body>
+
+<div class="crumb">
+	<a href="https://github.com/lllyasviel">Style2Paints Research</a> →
+	[Zhang et al. 2022]
+	</span>
+</div>
+
+
+<div class="content">
+<div class="paperheader">
+  <div class="papertitle"> Sprite-from-Sprite: Cartoon Animation Decomposition with Self-supervised Sprite Estimation </div>
+  <br>
+  <div class="pubinfo"> ACM Transactions on Graphics (ACM SIGGRAPH Asia 2022) Journal Paper </div>
+  <br>
+  <div class="authors"> <a href="https://github.com/lllyasviel">Lvmin Zhang</a>, <a href="http://www.cse.cuhk.edu.hk/~ttwong/">Tien-Tsin Wong</a>, and Yuxin Liu </div>
+</div>
+
+<div class="paperimg"><img src="./teaser.jpg"></div>
+<div class="longcaption">The "sprites" in real-world cartoons are unique: artists may draw arbitrary sprite animations for expressiveness, or alternatively, artists may also reduce their workload by tweening and adjusting contents. Can we use these properties to do a "reverse engineering" to get the original sprites in digital animation? </div>
+<div class="header">Abstract</div>
+<p>
+</p><div class="abstract">
+  We present an approach to decompose cartoon animation videos into a set of "sprites" - the basic units of digital cartoons that depict the contents and transforms of each animated object. The sprites in real-world cartoons are unique: artists may draw arbitrary sprite animations for expressiveness, where the animated content is often complicated, irregular, and challenging; alternatively, artists may also reduce their workload by tweening and adjusting sprites, or even reuse static sprites, in which case the transformations are relatively regular and simple. Based on these observations, we propose a sprite decomposition framework using Pixel Multilayer Perceptrons (Pixel MLPs) where the estimation of each sprite is conditioned on and guided by all other sprites. In this way, once those relatively regular and simple sprites are resolved, the decomposition of the remaining "challenging" sprites can simplified and eased with the guidance of other sprites. We call this method ``sprite-from-sprite'' cartoon decomposition. We study ablative architectures of our framework, and the user study demonstrates that our results are the most preferred ones in 19/20 cases.
+</div>
+<div class="header">Files</div>
+<ul>
+<li> <a href="./toondecompose.pdf">Paper</a> (PDF file, 32,830 KB) </li>
+</ul>
+<div class="header">See Also</div>
+<ul>
+
+<li> <a href="./video.mp4">Supplementary Video</a> - (MP4 file, 28,922 KB) A video describing the core methods and presenting animated results.</li>
+
+<li> <a href="https://github.com/lllyasviel/ToonDecompose">ToonDecompose</a> - (GitHub Project) The GitHub project correlated to this technical paper.</li>
+
+</ul>
+<div class="header">Citation</div>
+<p>
+Lvmin Zhang, Tien-Tsin Wong, and Yuxin Liu.<br>
+"Sprite-from-Sprite: Cartoon Animation Decomposition with Self-supervised Sprite Estimation."<br>
+<i>ACM Transactions on Graphics (ACM SIGGRAPH Asia 2022), Journal Paper</i>, Dec 2022.
+</p><div class="header">BibTeX</div>
+<p>
+</p><pre>@Article{ZhangSA2022,
+  author    = {Lvmin Zhang and Tien-Tsin Wong and Yuxin Liu},
+  title     = {Sprite-from-Sprite: Cartoon Animation Decomposition with Self-supervised Sprite Estimation},
+  journal   = "Transactions on Graphics (SIGGRAPH Asia 2022)",
+  year      = 2022,
+  volume    = 31,
+  number    = 1,
+}
+</pre>
+</div>
+
+
+</body></html>
